@@ -13,11 +13,11 @@
     <form action="login.php" method="$_POST">
     <div>
         <label for="username">Username</label>
-        <input type="text" name="username">
+        <input type="text" name="username" required>
     </div>
     <div>
         <label for="password">Password</label>
-        <input type="text" name="password" id="password">
+        <input type="text" name="password" id="password" required>
     </div>
     <button type="submit" name="login_user">Log In</button>
     <p>Not a user?<a href="registration.php">Register Here</a></p>
