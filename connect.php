@@ -41,7 +41,7 @@ if($user) {
 
 // Register th userif no error
 
-if(count($errors) == 0) 
+if(count($errors) == 0) {
     $password = md5($password_1); //this will encrypt the password
     $query = "INSERT INTO user(username, email, password) VALUES ('$username', '$email', '$password')";
 
@@ -50,3 +50,4 @@ if(count($errors) == 0)
     $_SESSION['success'] = "You are now logged in";
 
     header('location: index.php');
+}
